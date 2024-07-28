@@ -1,0 +1,123 @@
+:root {
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+}
+
+/* background-color: var(--color-lightest); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+  width: 100%;
+  height: 100vh;
+
+}
+
+div.container {
+  width: fit-content;
+  margin: 50px auto;
+  display: flex;
+  gap: 3rem;
+}
+button{
+  background-color: var(--color-dark);
+  border-radius: 7px;
+  border: none;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: var(--color-medium);
+}
+div.FriendContainer{
+  display: flex;
+  transition: 0.3s;
+  padding: 10px 5px;
+  border-radius: 7px;
+}
+div.FriendContainer > img{
+  border-radius: 50%;
+}
+div.FriendContainer:hover{
+  background-color: var(--color-light);
+}
+div.Info{
+  width: 200px;
+  padding: 0 5px;
+}
+#addFriend{
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#addFriend > button{
+  padding: 10px;
+}
+#close{
+  padding: 10px;
+}
+
+.addForm{
+  background-color: var(--color-light);
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.addForm > div{
+  display: flex;
+  margin: 5px 0;
+}
+label,input{
+  width: 50%;
+}
+
+.addForm > button{
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+}
+/* Bill input style */
+#billForm{
+  border-radius: 7px;
+  padding: 30px;
+  background-color: var(--color-light);
+}
+
+#billForm > h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+div.billInputContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#billSubmitBtn{
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#billSubmitBtn > button{
+  padding: 10px;
+}
